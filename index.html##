@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Sports Portal</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="WELCOME TO SPORTS PORTAL">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link rel="icon" type="image/png" href="/themes/higher_education/images/fav_icon.png">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="top-band">
+  <div class="container">
+    <div class="col-md-8">
+      <ul class="social-network social-circle">
+       
+        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#" class="iconyoutube" title="youtube"><i class="fa fa-youtube"></i></a></li>
+       
+      </ul>
+    </div>
+    <div class="col-md-4 text-right">
+      <input placeholder="Search.." name="search" type="text">
+      <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+  </div>
+</div>
+<section class="header-section fixed">
+<div class="container">
+<div class="row">
+  <div class="col-sm-8 col-xs-12">
+    <div class="logo"> <a href="#"> <img src="images/goklogo-new.png" "iti" class="logo_main"></a> </div>
+    <div class="header_text">
+      <h1><span class="top-hry-logo">&nbsp;</span>Department Youth Empowerment and Sports, Karnataka</h1>
+    </div>
+  </div>
+  <div class="col-sm-4 col-xs-12 "> <img src="images/call.png" style="margin-top:10px; margin-bottom:10px;"><a href="#"><img src="images/email.png"></a> </div>
+  </section>
+  <div class="navbar yamm navbar-default custom-navbar " id="header_top">
+    <div class="login-icon"> </div>
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+        <a href="#" class="navbar-brand">Yamm Megamenu</a> </div>
+      <div id="navbar-collapse-1" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href='index.html'title='Home'>Home</a></li>
+          <li class='dropdown'><a href='#'  title='About Us' data-submenu='' data-toggle='dropdown' class='dropdown-toggle'>About Us</a> </li>
+         
+          <li class="dropdown"><a href='gamerule.html'>Game Rule</a>
+            
+          </li>
+         
+          <li dropdown><a href='#' title='BEST PRACTICES'>Sports Association</a></li>
+          <li class='dropdown'><a href='#'  title='RUSA HARYANA' data-submenu='' data-toggle='dropdown' class='dropdown-toggle'>Scheme</a> </li>
+          <li dropdown><a href='/index.php/contactus' title='Contact Us'>Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="after-header" id="navigation-point-data">cdcdcd</div>
+  <section class="banner">
+  
+  
+  
+  
+  
+  
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+    <img src="images/banner.jpg">
+    </div>
+
+    <div class="item">
+      <img src="images/banner1.jpg" alt="Chicago">
+    </div>
+
+    <div class="item">
+      <img src="images/banner2.jpg" alt="New York">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <i class="fa fa-arrow-left" aria-hidden="true"></i>
+
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+  </a>
+</div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+    <!-- Wrapper for slides -->
+    
+    <!--    <div class="online-button"> <a href="#"> <img src="/images/online-button.png" alt="online-admission" class="img-responsive"> </a> </div>-->
+    </section>
+    <div id="outer-content">
+      <section class="tab-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 left collapse-panel">
+            <h2>About Us</h2>
+            <p>The Department was renamed as Youth Empowerment and Sports Department in 2013. The Department is headed by the Commissioner/Director who is ex-officio Director General of Sports Authority of Karnataka, Member Secretary of GETHNAA and Secretary of Stadium Management Committee.Youth Empowerment and Sports department was established in 1969 as the Directorate of Youth Services with the aim of channelizing the dynamism of Youth in nation building activities. The department was reorganised in 1975...<strong>read more</strong></p>
+            
+            
+            
+            <br>
+            
+            
+            
+              <!-- panel-group -->
+              <!--- icon section start -->
+              <div class="row ">
+                <div class="col-sm-3 box text-center"> <img src="images/bad.png" class="img-circle" alt="Cinque Terre" width="304" height="236">
+                  <h2 style=" font-size:15px; margin-top:3px;">Specialized Coaches</h2>
+                </div>
+                <div class="col-sm-3 box text-center"> <img src="images/ban1.jpg" class="img-circle" alt="Cinque Terre" width="304" height="236">
+                  <h2 style=" font-size:15px; margin-top:3px;">Training</h2>
+                </div>
+                <div class="col-sm-3 box text-center"> <img src="images/bad2.png" class="img-circle" alt="Cinque Terre" width="304" height="236">
+                  <h2 style=" font-size:15px; margin-top:3px;">Academy</h2>
+                </div>
+                <div class="col-sm-3 box text-center"> <img src="images/bad3.png" class="img-circle" alt="Cinque Terre" width="304" height="236">
+                  <h2 style=" font-size:15px; margin-top:3px;">Team Information</h2>
+                </div>
+                
+                
+                
+                
+                <div class="col-sm-3 box text-center"> <img src="images/bad4.png" class="img-circle" alt="Cinque Terre" width="304" height="236">
+                  <h2 style=" font-size:15px; margin-top:3px;">Training Camp</h2>
+                </div>
+                
+                  
+                
+                
+                
+                
+                     <div class="col-sm-3 box text-center"> <img src="images/ban5.png" class="img-circle" alt="Cinque Terre" width="304" height="236">
+                  <h2 style=" font-size:15px; margin-top:3px;">Guidelines/Notification</h2>
+                </div>
+                
+                  
+                
+                     <div class="col-sm-3 box text-center"> <img src="images/bad6.png" class="img-circle" alt="Cinque Terre" width="304" height="236">
+                  <h2 style=" font-size:15px; margin-top:3px;">Game Rules</h2>
+                </div>
+                
+                  
+                
+                
+                
+                
+                     <div class="col-sm-3 box text-center"> <img src="images/bad3.png" class="img-circle" alt="Cinque Terre" width="304" height="236">
+                  <h2 style=" font-size:15px; margin-top:3px;">Policies</h2>
+                </div>
+                
+                
+                
+             
+                
+                  
+                
+                
+                
+                
+                
+              </div>
+              <!-- icon section closed -->
+              <div style="clear: both;"></div>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="col-md-4 tab-bottom-down">
+              <!-- Nav tabs -->
+              <ul class="nav nav-tabs my-tab" role="tablist">
+                <li role="presentation" class="active"><a href="#Notice" aria-controls="Notice" role="tab" data-toggle="tab" style="background-color:#bb0909; color:#fff;"><strong>Upcoming Tournaments</strong></a></li>
+                              
+
+			   <li role="presentation"><a href="#important-links" aria-controls="Events" role="tab" data-toggle="tab">News</a></li>
+                
+              </ul>
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="Notice">
+                  <div class="tab_height">
+                    <marquee scrollamount="5" direction="up" onMouseOver="this.setAttribute('scrollamount', 0, 0); this.stop();" onMouseOut="this.setAttribute('scrollamount', 5, 0); this.start(); " height="91%">
+                    <ul>
+                      <li><a href="#" target="_blank">
+                        <p class="tab-in" title="Notice Admission Guidelines Regarding Reservation in Backward Classes dated 21-06-2018"> <span class="news-img"></span>The Web Site would provide an easy access to the schemes, programmes, welfare measures, and every activity under taken by the Department in the fields of Youth Service and Sports.</p>
+                        </a></li>
+                      <li><a href="#" target="_blank">
+                        <p class="tab-in" title="Appointment of Sh. Suresh Dhanerwal, Principal as a Nodal Officer for UGC Schemes running in Colleges. Notice Dated 21.06.2018"> <span class="news-img"></span>The Web Site would provide an easy access to the schemes, programmes, welfare measures, and every activity under taken by the Department in the fields of Youth Service and Sports.</p>
+                        </a></li>
+                    </ul>
+                    </marquee>
+                    <a href="#" class="view-all" target="_blank">View All </a> </div>
+                </div>
+                <!-- Tab panes -->
+                <div role="tabpanel" class="tab-pane " id="News">
+                  <div class="tab_height">
+                    <marquee scrollamount="3" direction="up" onMouseOver="this.setAttribute('scrollamount', 0, 0); this.stop();" onMouseOut="this.setAttribute('scrollamount', 5, 0); this.start(); " height="91%">
+                    <ul>
+                      <li><a href="http://highereduhry.com/index.php/newsdata?id=2E08DF1DB76CC872AAFA6107C9D1B4D79CCAF3328C0578A3A8F0023088E01C23" target="_blank">
+                        <p class="tab-in" title="amazon223"> <span class="news-img"></span>amazon223</p>
+                        </a></li>
+                      <li><a href="http://highereduhry.com/index.php/newsdata?id=17F32A4A247EB1CEA9FEE787109D2DF61A13AF241BD423542C7D61FB9E429CEB" target="_blank">
+                        <p class="tab-in" title="testcircular3243"> <span class="news-img"></span>testcircular3243</p>
+                        </a></li>
+                    </ul>
+                    </marquee>
+                    <a href="http://highereduhry.com/index.php/newsupdatesdata?page=1" class="view-all" target="_blank">View All News...</a> </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="important-links">
+                  <div class="tab_height">
+                    <div class="microsoft marqueeContainer">
+                      <div class="">
+                        <ul>
+                          <li>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</li>
+                          <li> The Department was renamed as Youth Empowerment and Sports Department in 2013. The Department is headed by the Commissioner/Director who is ex-officio Director General of Sports Authority of Karnataka, Member Secretary of GETHNAA </li>
+                      
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+ 
+      </section>
+      <div class="container">
+        <div class="row">
+          <h3 class="text-left h3-title"> <span>Videos Galllery</span></h3>
+          <div class='list-group gallery'>
+            <div class='col-sm-4 col-xs-6 col-md-4 col-lg-3'> <a class="thumbnail fancybox" rel="ligthbox" href="#">
+              <iframe width="250" height="220" src="https://www.youtube.com/embed/TSys0GANwqU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              <div class='text-right'> <small class='text-muted'>Image Title</small> </div>
+              <!-- text-right / end -->
+              </a> </div>
+            <!-- col-6 / end -->
+            <div class='col-sm-4 col-xs-6 col-md-4 col-lg-3'> <a class="thumbnail fancybox" rel="ligthbox" href="#">
+              <iframe width="250" height="220" src="https://www.youtube.com/embed/TSys0GANwqU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              <div class='text-right'> <small class='text-muted'>Image Title</small> </div>
+              <!-- text-right / end -->
+              </a> </div>
+            <!-- col-6 / end -->
+            <div class='col-sm-4 col-xs-6 col-md-4 col-lg-3'> <a class="thumbnail fancybox" rel="ligthbox" href="#">
+              <iframe width="250" height="220" src="https://www.youtube.com/embed/TSys0GANwqU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              <div class='text-right'> <small class='text-muted'>Image Title</small> </div>
+              <!-- text-right / end -->
+              </a> </div>
+            <!-- col-6 / end -->
+            <!-- col-6 / end -->
+            <div class='col-sm-4 col-xs-6 col-md-4 col-lg-3'> <a class="thumbnail fancybox" rel="ligthbox" href="#">
+              <iframe width="250" height="220" src="https://www.youtube.com/embed/TSys0GANwqU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              <div class='text-right'> <small class='text-muted'>Image Title</small> </div>
+              <!-- text-right / end -->
+              </a> </div>
+            <!-- col-6 / end -->
+            <!-- col-6 / end -->
+            <!-- col-6 / end -->
+          </div>
+          <!-- list-group / end -->
+        </div>
+        <!-- row / end -->
+      </div>
+      <!-- container / end -->
+      <!-- ============ drag and drop widget =============== -->
+      <!-- ============ drag and drop widget closed =============== -->
+      <!-- Digital Initiatives start -->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h3 class="text-left h3-title"> <span>Associations</span></h3>
+            <div class="bottombig-box">
+              <div id="myCarousel" class="carousel slide">
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <div class="row" style="padding-bottom: 10px;">
+                      <     <div class="allLogo-img mb10"> <a href="#"> <img src="images/slogo1.jpg" alt="Image" class="img-responsive"></a> </div>
+                      <div class="allLogo-img mb10"> <a href="#"> <img src="images/slogo2.png" alt="Image" class="img-responsive"></a> </div>
+                      <div class="allLogo-img mb10"> <a href="#"> <img src="images/slogo3.png" alt="Image" class="img-responsive"></a> </div>
+                      <div class="allLogo-img mb10"> <a href="#"> <img src="images/slogo2.png" alt="Image" class="img-responsive"></a> </div>
+                      <div class="allLogo-img mb10"> <a href="#"> <img src="images/slogo1.jpg" alt="Image" class="img-responsive"></a> </div>
+                      <div class="allLogo-img mb10"> <a href="#"> <img src="images/slogo1.jpg" alt="Image" class="img-responsive"></a> </div>
+                      <div class="allLogo-img mb10"> <a href="#"> <img src="images/slogo2.png" alt="Image" class="img-responsive"></a> </div>
+                    </div>
+                  </div>
+                </div>
+                <!--<a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Digital Initiatives -->
+      <div class="clearfix"> </div>
+    </div>
+  
+  
+  
+  <section class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <h6>About Us</h6>
+          <p style="color:#fff;">Youth Empowerment and Sports department was established in 1969 as the Directorate of Youth Services with the aim of channelizing the dynamism of Youth in nation building activities. The department was reorganised in 1975...</p>
+        </div>
+        <div class="col-sm-3">
+          <h6>Quick Links</h6>
+          <ul>
+            <li><a href="#" target="_blank"><i class="fa fa-arrow-right"></i>Policies </a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-arrow-right"></i>Schemes</a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-arrow-right"></i>Annual Reports</a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-arrow-right"></i>Publications</a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-arrow-right"></i>Scholarship</a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-arrow-right"></i>Tournaments</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-3">
+          <h6>CONTACT DETAIL</h6>
+          <ul>
+            <li>State Youth Centre
+              Nrupathunga Road,
+              Bangalore-560001 </li>
+          </ul>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124416.07477111636!2d77.51684995888672!3d12.971702035644043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae16739e948459%3A0x4eba744c5baffb90!2sPWD+Annexe+Building%2C+Nunegundlapalli%2C+Ambedkar+Veedhi%2C+Sampangi+Rama+Nagar%2C+Bengaluru%2C+Karnataka+560001!5e0!3m2!1sen!2sin!4v1529974929582" width="250" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="col-sm-3">
+          <h6>EMAIL AND HELPLINE</h6>
+          <img src="images/call.jpg">
+          <ul>
+            <li>Phone: 080 22215601</li>
+            <li>Email: dyesdept@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <!-- Start of SimpleHitCounter Code -->
+          <p> 2018 &copy; CopyrightAll rights Reserved</p>
+          <!-- End of SimpleHitCounter Code -->
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<script>function toggleIcon(e) {
+    $(e.target)
+        .prev('.panel-heading')
+        .find(".more-less")
+        .toggleClass('glyphicon-plus glyphicon-minus');
+}
+$('.panel-group').on('hidden.bs.collapse', toggleIcon);
+$('.panel-group').on('shown.bs.collapse', toggleIcon);</script>
+</body>
+</html>
