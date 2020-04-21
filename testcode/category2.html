@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="{$language.iso_code}">
+<head>
+{block name='head'}
+        {include file='_partials/head.tpl'}
+      {/block}
+</head>
+
+<body id="{$page.page_name}" class="{$page.body_classes|classnames} categoria2">
+{hook h='displayAfterBodyOpeningTag'}
+<main>
+<header id="header"> {block name='header'}
+  {include file='_partials/header.tpl'}
+  {/block} </header>
+<section id="wrapper">
+<div class="container">
+{block name='breadcrumb'}
+       {include file='_partials/breadcrumb.tpl'}
+    {/block}
+
+  {block name='content'}
+<section id="main">
+<section id="products">
+{if $listing.products|count}
+<div>
+<div class="row">
+  <div class="col-md-6">
+    <section class="page-content" id="content">
+      <h1 class="h1">{$category.name}</h1>
+      <!-- @todo: use include file='catalog/_partials/product-flags.tpl'} -->
+      <div class="images-container">
+        <div class="product-cover"> <img class="js-qv-product-cover" src="{$category.image.large.url}" alt="{if !empty($category.image.legend)}{$category.image.legend}{else}{$category.name}{/if} "  style="width:100%;" itemprop="image"> </div>
+      </div>
+    </section>
+  </div>
+  <div class="col-md-6">
+    <div id="js-product-list" class="container-productos">
+      <h3>Selecciona la reparación de tu dispositivo:</h3>
+      <div class="products"> {foreach from=$listing.products item="product"}
+        {block name='product_miniature'}
+        
+        {block name='product_name'}
+        {if $page.page_name == 'index'}
+        <h3 class="h3 product-title" itemprop="name">{$product.name}</h3>
+        {else}
+        <div class="producto-en-linea">
+        <h2 class="h3 product-title" itemprop="name">
+          <input type="checkbox" class="checkItem" name="Pbox" id="{$product.id}">
+          <p class="content_url" id="{$product.id}" ><span class="span" id="{$product.id}"></span><span class="texto" id="{$product.id}"> {$product.name} </span></p>
+            
+          {block name='product_price_and_shipping'}
+          {if $product.show_price}
+          <div class="product-price-and-shipping"> {if $product.has_discount}
+            {hook h='displayProductPriceBlock' product=$product type="old_price"} <span class="sr-only">{l s='Regular price' d='Shop.Theme.Catalog'}</span> <span class="regular-price">{$product.regular_price}</span> {if $product.discount_type === 'percentage'} <span class="discount-percentage discount-product">{$product.discount_percentage}</span> {elseif $product.discount_type === 'amount'} <span class="discount-amount discount-product">{$product.discount_amount_to_display}</span> {/if}
+            {/if}
+            
+            {hook h='displayProductPriceBlock' product=$product type="before_price"} <span class="sr-only">{l s='Price' d='Shop.Theme.Catalog'}</span> <span itemprop="price" class="price">{$product.price}</span> {hook h='displayProductPriceBlock' product=$product type='unit_price'}
+            
+            {hook h='displayProductPriceBlock' product=$product type='weight'} </div>
+          {/if}
+          {/block}
+          <form action="{$urls.pages.cart}" method="post" id="add-to-cart-or-refresh" style="visibility: hidden;">
+            <input type="hidden" name="token" value="{$static_token}">
+            <input type="hidden" name="id_product" value="{$product.id}" id="product_page_product_id">
+            <input type="hidden" name="id_customization" value="0" id="product_customization_id">
+            <input type="number" name="qty" id="quantity_wanted" value="1" class="input-group form-control" min="1" aria-label="Quantity" style="display: block;">
+            <button class="btn btn-primary add-to-cart" id="subbtn{$product.id}" data-button-action="add-to-cart" type="submit" > <i class="material-icons shopping-cart"></i> {l s='Add to cart' d='Shop.Theme.Actions'} </button>
+          </form>
+        </h2>
+        <div class="shot_discrp" id="sort_btn{$product.id}" style="display: none;">
+            <a href="{$product.url}" class="thumbnail product-thumbnail">
+            <img
+              src="{$product.cover.bySize.home_default.url}"
+              alt="{if !empty($product.cover.legend)}{$product.cover.legend}{else}{$product.name|truncate:30:'...'}{/if}"
+              data-full-size-image-url="{$product.cover.large.url}"
+            />
+          </a>
+          <div class="inerdiscrp"> {$product.description_short nofilter} </div>
+          <p class="sort_btn"> <a href="{$product.url}" target="_blank"> Ver más </a> </p>
+        </div>
+        </div>
+        {/if}
+        
+        {/block}
+        
+        {/block}
+        {/foreach} </div>
+    </div>
+    {/if} </div>
+  <div class="cart_info col-md-12">
+    <div class="col-md-3 fist_col"> <i class="material-icons shopping-cart cutm"></i>
+      <p class="s_crt"> Total productos :</p>
+      <p class="total_num"> </p>
+    </div>
+    <div class="col-md-2 second_col">
+      <p class="sbtytl"> Envio : </p>
+      <p class="subtotal_num"> </p>
+    </div>
+    <div class="col-md-2 third_col">
+      <p class="ttyl"> Total : </p>
+      <p class="totalod_num"> </p>
+    </div>
+    <div class="col-md-3 red_bg">
+      <p class="arrow_link"> <i class="material-icons arrow_ic"></i> </p>
+      <a href="{$urls.pages.cart}">
+      <p class="data_link"> Tramitar reparación</p>
+      </a> </div>
+  </div>
+  </section>
+  {/block} </div>
+</section>
+ 
+<footer id="footer"> {block name="footer"}
+  {include file="_partials/footer.tpl"}
+  {/block} </footer>
+</main>
+{hook h='displayBeforeBodyClosingTag'}
+
+      {block name='javascript_bottom'}
+        {include file="_partials/javascript.tpl" javascript=$javascript.bottom}
+      {/block} 
+  <style>
+.checkItem {
+    position: absolute;
+    height: 37px;
+    width: 27px;
+    cursor: pointer;
+    margin-left: 2px;
+    z-index: 9999;
+    opacity: 0;
+}
+.container-productos input[type="checkbox"] {
+    display: block;
+}
+  </style>
+      
+<script type="text/javascript">
+ 
+ jQuery(".checkItem").click(function(){
+ var checkedNum = jQuery('input[name="Pbox"]:checked').length;
+var p_id= jQuery(this).attr('id');
+ if(jQuery(this).prop("checked") == true){
+//alert('Hi I am clicked'+p_id);
+/*jQuery("#sort_btn"+p_id).show();
+jQuery("#sort_dic"+p_id).show();*/
+jQuery('#subbtn'+p_id).trigger('click');
+
+jQuery.ajax({
+        method: "POST",
+        //url: "module/ps_shoppingcart/ajaxc",
+            url: "index.php?controller=cart&ajaxc",
+        data: {},
+        success: function (data) {
+           // $('.load_menu').html(data);
+           //var data1 = JSON.parse(data)
+            console.log(data);
+            var totalitems = jQuery(data).find('.js-subtotal').text();
+            var Subtotal = jQuery(data).find('.cart-total').find('.value').text();
+            var Total = jQuery(data).find('.cart-total').next().find('.value').text();
+            totalitems=totalitems.replace(/[^0-9]/g,'')
+
+            $(".total_num").html(totalitems);
+            $(".subtotal_num").html(Subtotal);
+            $(".totalod_num").html(Total);
+         }
+    })
+
+}
+else
+{
+
+ jQuery.ajax({
+        method: "POST",
+        //url: "module/ps_shoppingcart/ajaxc",
+            url: "index.php?controller=cart&delete=1&id_product="+p_id+"&ipa=0&id_address_delivery=0",
+        data: {},
+        success: function (data) {
+           // $('.load_menu').html(data);
+           //var data1 = JSON.parse(data)
+            console.log(data);
+             
+         }
+    })
+
+  
+  jQuery.ajax({
+        method: "POST",
+        //url: "module/ps_shoppingcart/ajaxc",
+            url: "index.php?controller=cart&ajaxc",
+        data: {},
+        success: function (data) {
+           // $('.load_menu').html(data);
+           //var data1 = JSON.parse(data)
+            console.log(data);
+            var totalitems = jQuery(data).find('.js-subtotal').text();
+            var Subtotal = jQuery(data).find('.cart-total').find('.value').text();
+            var Total = jQuery(data).find('.cart-total').next().find('.value').text();
+            totalitems=totalitems.replace(/[^0-9]/g,'')
+
+            $(".total_num").html(totalitems);
+            $(".subtotal_num").html(Subtotal);
+            $(".totalod_num").html(Total);
+         }
+    })
+
+  
+}
+/*if(jQuery(this).prop("checked") == false){
+  jQuery("#sort_btn"+p_id).hide();
+jQuery("#sort_dic"+p_id).hide();
+}*/
+ 
+if(!checkedNum)
+{
+  jQuery(".cart_info").hide();
+}
+else
+{
+  jQuery(".cart_info").show();
+}
+ 
+ 
+  });
+jQuery(document).ready(function(){
+  jQuery(".texto").click(function(){
+
+    //alert("The paragraph was clicked.");
+    var p_id= jQuery(this).attr('id');
+
+              jQuery('.shot_discrp').hide();
+              //jQuery(this).show();
+    jQuery("#sort_btn"+p_id).show();
+
+
+ 
+  });
+}); 
+ </script>
+</body>
+</html>     
